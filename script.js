@@ -35,8 +35,7 @@ function authenticate() {
   }
 }
 
-window.onload = () => {
-  localStorage.removeItem("isLoggedIn");
+window.onload = function () {
   authContainer.style.display = "flex";
   portfolio.style.display = "none";
 };
