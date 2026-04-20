@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AUTH SCREEN -->
+  <div class="auth-container" id="authContainer">
+    <div class="auth-card">
+      <h2 id="authTitle">Login</h2>
+
+      <div class="input-group" id="nameField" style="display: none;">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+
+      <button class="btn" id="authButton" onclick="authenticate()">Login</button>
+
+      <div class="toggle-text">
+        <span id="toggleForm">Don't have an account? Sign Up</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio">
+    <header>
+      <nav>
+        <div class="logo">Portfolio</div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#socials">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Hello, I'm <span>[INSERT NAME]</span></h1>
+        <p>I am a <span class="typing" id="typingText"></span></p>
+        <p>[INSERT SHORT BIO]</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Hi, I'm <strong>[INSERT NAME]</strong>, a passionate
+          <strong>[INSERT PROFESSIONAL TITLE]</strong>.
+          I enjoy building clean, responsive, and user-friendly digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-list">
+          <div class="skill-item">HTML5</div>
+          <div class="skill-item">CSS3</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">Node.js</div>
+          <div class="skill-item">Responsive Design</div>
+          <div class="skill-item">Git & GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <h2 class="section-title">Contact Form</h2>
+
+        <form class="contact-form">
+          <div class="input-group">
+            <label>Your Email</label>
+            <input type="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="input-group">
+            <label>Your Message</label>
+            <textarea placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="socials">
+      <div class="container socials">
+        <h2 class="section-title">Connect With Me</h2>
+
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+          <a href="https://instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 [INSERT NAME] | All Rights Reserved
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
