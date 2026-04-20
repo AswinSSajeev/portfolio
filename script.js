@@ -46,10 +46,9 @@ window.onload = () => {
 const typingText = document.getElementById("typingText");
 
 const words = [
-  "[INSERT PROFESSIONAL TITLE]",
+  "Programmer",
   "Web Developer",
   "UI/UX Designer",
-  "Freelancer"
 ];
 
 let wordIndex = 0;
