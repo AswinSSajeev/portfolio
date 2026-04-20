@@ -333,6 +333,10 @@ footer {
   transition: 0.3s;
 }
 
+#portfolio {
+  display: none;
+}
+
 .project-card a:hover {
   transform: scale(1.05);
 }
