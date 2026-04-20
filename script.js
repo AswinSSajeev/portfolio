@@ -28,7 +28,6 @@ function authenticate() {
   const password = document.getElementById("password").value;
 
   if (email && password) {
-    localStorage.setItem("isLoggedIn", "true");
     authContainer.style.display = "none";
     portfolio.style.display = "block";
   } else {
@@ -37,10 +36,9 @@ function authenticate() {
 }
 
 window.onload = () => {
-  if (localStorage.getItem("isLoggedIn") === "true") {
-    authContainer.style.display = "none";
-    portfolio.style.display = "block";
-  }
+  localStorage.removeItem("isLoggedIn");
+  authContainer.style.display = "flex";
+  portfolio.style.display = "none";
 };
 
 const typingText = document.getElementById("typingText");
