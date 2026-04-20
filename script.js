@@ -36,8 +36,16 @@ function authenticate() {
 }
 
 window.onload = function () {
-  authContainer.style.display = "flex";
-  portfolio.style.display = "none";
+  const params = new URLSearchParams(window.location.search);
+  const skipLogin = params.get("open");
+
+  if (skipLogin === "portfolio") {
+    authContainer.style.display = "none";
+    portfolio.style.display = "block";
+  } else {
+    authContainer.style.display = "flex";
+    portfolio.style.display = "none";
+  }
 };
 
 const typingText = document.getElementById("typingText");
